@@ -1,0 +1,37 @@
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin : 5rem auto;
+}
+
+#calculator {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+
+.keys {
+    padding : 0.5em;
+    font-size: 1.5em;
+    /* font-weight: bold; */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#screen {
+    grid-column-start: 1 ;
+    grid-column-end: 5;
+    padding: 0.5em;
+    background-color:aqua;
+    font-size: 2em;
+    text-align: right;
+}
+
+#equal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
