@@ -3,33 +3,36 @@
     <head>
         <title>Calculator</title>
         <meta charset="UTF-8">
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body>
+        <body>
     <div id="container">
         <div id="calculator">
-            <div id="title">Calculator</div>
-            <div id="screen">555</div>
-            <button class="keys" data-type="op" id="equal">=</button>
+            <div id="title"></div>
+            <div id="screen"></div>
             <button class="keys" data-type="del">C</button>
             <button class="keys" data-type="clear">AC</button>
-            <button class="keys" data-type="9">9</button>
-            <button class="keys" data-type="8">8</button>
-            <button class="keys" data-type="7">7</button>
-            <button class="keys" data-type="op">/</button>
-            <button class="keys" data-type="6">6</button>
-            <button class="keys" data-type="5">5</button>
-            <button class="keys" data-type="4">4</button>
-            <button class="keys" data-type="op">*</button>
-            <button class="keys" data-type="3">3</button>
-            <button class="keys" data-type="2">2</button>
-            <button class="keys" data-type="1">1</button>
-            <button class="keys" data-type="op">-</button>
-            <button class="keys" data-type="sign">+ / -</button>
-            <button class="keys" data-type="0">0</button>
-            <button class="keys" data-type="dot">.</button>
-            <button class="keys" data-type="op">+</button>
+            <button class="keys" data-type="op" value="/">/</button>
+            <button class="keys" data-type="op" value="*">*</button>
+            <button class="keys" data-type="digit" value="9">9</button>
+            <button class="keys" data-type="digit" value="8">8</button>
+            <button class="keys" data-type="digit" value="7">7</button>
+            <button class="keys" data-type="op" value="-">-</button>
+            <button class="keys" data-type="digit" value="6">6</button>
+            <button class="keys" data-type="digit" value="5">5</button>
+            <button class="keys" data-type="digit" value="4">4</button>
+            <button class="keys" data-type="op" value="+">+</button>
+            <button class="keys" data-type="digit" value="3">3</button>
+            <button class="keys" data-type="digit" value="2">2</button>
+            <button class="keys" data-type="digit" value="1">1</button>
+            <button class="keys" data-type="equal" >=</button>
+            <button class="keys" data-type="digit" value="0">0</button>
+            <button class="keys" data-type="dot" value=".">.</button>
+            <button class="keys" data-type="sign" id="top">
+                <a href="https://www.theodinproject.com/">
+                <img src = "top.svg"></a></button>
+
         </div>
     </div>
     </body>
