@@ -18,6 +18,7 @@ body {
     padding: 2rem;
     padding-top: 1rem;
     border: thick double #32a1ce;
+    border-radius: 1rem;
 }
 
 #title {
@@ -33,9 +34,29 @@ body {
 .keys {
     padding : 0.5em;
     font-size: 1.5em;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border: thin solid black
+    border: thin solid black;
+    border-radius: 0.5rem;
+}
+
+  .keys:hover {
+    background: #9aaec5;
+    top: -5px;
+  }
+
+  .keys:focus {
+    background: #9aaec5;
+    top: -5px;
+  }
+
+
+[data-type="op"],
+[data-type="clear"], 
+[data-type="del"],
+[data-type="dot"],
+[data-type="equal"]{
+    background-color: burlywood;
 }
 
 #screen {
