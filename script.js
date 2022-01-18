@@ -43,7 +43,6 @@ function onKeyPress(e){
 
 function onKeyClick(e){
     let key = e.target
-    console.log(`op1 : ${op1} op2 : ${op2} typedStr : ${typedStr} opr : ${opr}`);
     performSwitch(key.dataset.type,key.value);
     
 }
@@ -63,7 +62,6 @@ function updateScreen(text,mode){
 
 function performSwitch(selection,value){
 
-    console.log(`performSwitch : selection - ${selection} value - ${value}`);
     switch(selection){
         case "digit" : 
             typedStr += value;
@@ -137,7 +135,6 @@ function performSwitch(selection,value){
             
             break;
         }
-        console.log(`after op1 : ${op1} op2 : ${op2} typedStr : ${typedStr} opr : ${opr}`);
 }
     
 function updateOperands(){
@@ -157,7 +154,6 @@ return false;
 }
 
 function deleteChar(){
-    // console.log(`deleteChar op1 : ${op1} op2 : ${op2} typedStr : ${typedStr} opr : ${opr}`);
     if(op1 === undefined){
         typedStr = typedStr.slice(0,-1);
         if(isDotPressed){
@@ -183,7 +179,6 @@ function deleteChar(){
 }
 
 function performOperation(num1, num2, opr){
-    // console.log(`op1 : ${num1} op2 : ${num2} opr : ${opr}`);
     let res ;
     switch(opr){
         case '+':
