@@ -7,7 +7,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin : auto;
+    margin : 0;
     background-color: hsla(250, 45%, 75%, 0.57);
     height: 100%;
 }
